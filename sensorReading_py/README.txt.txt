@@ -1,0 +1,1 @@
+Project.py - script using for publishing data from sensor Czujnik pyłu / stężenia cząstek - monitor czystości powietrza PM2.5 - GP2Y1010AU0F + moduł - Waveshare 10500 + RasperyPI 3 + A/C ads1115 
