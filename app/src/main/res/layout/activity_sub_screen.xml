@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    //Autor: Damian Sienicki, dnia 16.02.2020, licencja GPL
+    <EditText
+        android:id="@+id/etSubTopic"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Topic to subscribe"/>
+
+
+    <Button
+        android:id="@+id/bSubscribe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSubTopic"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Subscribe Topic" />
+
+    <Button
+        android:id="@+id/bUnsubscribe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bSubscribe"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="Unsubscribe Topic" />
+
+    <Button
+        android:id="@+id/bClearHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bUnsubscribe"
+        android:text="Clear screen" />
+
+    <Button
+        android:id="@+id/bConnectStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bClearHistory"
+        android:text="Check connection status" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System message:"
+        android:id="@+id/tvMqttClientMsg"
+        android:layout_below="@+id/bConnectStatus"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/bLoginMenu"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Log out" />
+
+    <Button
+        android:id="@+id/bPubScreen"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="200dp"
+        android:text="Publish Area" />
+
+    <ScrollView
+        android:id="@+id/SCROLLER_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMqttClientMsg"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tvSubscribedMsg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:padding="10dp" />
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    //Autor: Damian Sienicki, dnia 16.02.2020, licencja GPL
+    <EditText
+        android:id="@+id/etPubTopic"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:hint="Topic to public"/>
+
+    <EditText
+        android:id="@+id/etPublicMsg"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPubTopic"
+        android:hint="Message to publish"/>
+
+
+    <Button
+        android:id="@+id/bPublic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etPublicMsg"
+        android:text="Publish Message" />
+
+    <Button
+        android:id="@+id/bClearHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/bPublic"
+        android:text="Clear screen" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="System message:"
+        android:id="@+id/tvMqttClientMsg"
+        android:layout_below="@+id/bClearHistory"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:id="@+id/bLoginMenu"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Log out" />
+
+    <Button
+        android:id="@+id/bSubScreen"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="200dp"
+        android:text="Subscribe Area" />
+
+</RelativeLayout>
