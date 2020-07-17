@@ -1,0 +1,1 @@
+For the correct operation of the application its needed to use Mosquitto broker configured for ca cert, client cert and client key. The same thing need to be done in app(source:C:\Users\Damian\Desktop\SmartHomeApp\app\src\main\assets) with names: cacert, clientcert, clientkey. App works for all version of Android. Communication is over MQTT and TLS ver 1.1, 1.2, 1.3.  
